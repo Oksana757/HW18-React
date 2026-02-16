@@ -90,7 +90,7 @@ const Contacts = () => {
 
 
       <footer className={styles.footer}>
-        <div className={styles.footerContacts}>
+        <div className={styles.footerContacts}>git rem
           <h3 className={styles.footerTitle}>Контакты</h3>
           <p>8 800 000 00 00</p>
           <p>email: example@email.com</p>
