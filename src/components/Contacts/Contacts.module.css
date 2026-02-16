@@ -154,7 +154,7 @@
 .footer {
   background: #343a40;
   color: white;
-  padding: 30px 20px;
+  padding: 100px 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -168,54 +168,62 @@
 }
 
 .footerTitle {
-  font-size: 1.2rem;
+  font-size: 20px;
   margin-bottom: 15px;
   color: #fff;
+
 }
 
 .footerContacts p {
-  margin: 5px 0;
-  color: #adb5bd;
+  margin: 20px 0;
+  color: #dedfe0;
+  font-size: 20px;
 }
 
 .footerCopyright {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 20px;
 }
 
 .footerCopyright p {
-  color: #adb5bd;
+  color: #f0f2f3;
   text-align: center;
 }
 
 .footerEmail {
-  text-align: right;
+  margin-top: 40px;
+  color: #dddcdc; /* Цвет текста "Введите свой email" */
+  font-family: sans-serif;
 }
 
-@media (max-width: 768px) {
-  .footerEmail {
-    text-align: center;
-  }
+.footerEmail p {
+  margin-bottom: 8px;
+  font-size: 20px;
 }
 
-.footerInput {
-  padding: 10px 15px;
-  border: 2px solid #495057;
-  border-radius: 6px;
-  background: #495057;
-  color: white;
-  width: 100%;
-  max-width: 300px;
-  margin-top: 10px;
+.inputLine {
+  background: transparent;    /* Прозрачный фон */
+  border: none;               /* Убираем рамку полностью */
+  border-bottom: 1px solid #dddbdb; /* Оставляем только тонкую линию снизу */
+  color: #fff;                /* Белый цвет текста при вводе */
+  width: 100%;                /* Растягиваем на всю ширину контейнера */
+  max-width: 300px;           /* Ограничиваем ширину как на скрине */
+  padding: 8px 0;             /* Отступ только сверху и снизу */
+  outline: none;              /* Убираем стандартную синюю обводку браузера */
+  font-size: 20px;
+  transition: border-bottom-color 0.3s ease;
 }
 
-.footerInput::placeholder {
-  color: #adb5bd;
+/* Эффект при клике: линия становится чуть светлее */
+.inputLine:focus {
+  border-bottom-color: #dadada;
 }
 
-.footerInput:focus {
-  outline: none;
-  border-color: #007bff;
-  background: #495057;
+
+.inputLine::placeholder {
+  color: #dddddd;
+  opacity: 1;
 }
+

@@ -96,11 +96,11 @@ const Contacts = () => {
           <p>email: example@email.com</p>
         </div>
         <div className={styles.footerCopyright}>
-          <p>© 2026 Спикер-магазин. Все права защищены</p>
+          <p>© 2026 Сникер-магазин. Все права защищены</p>
         </div>
         <div className={styles.footerEmail}>
           <p>Введите свой email:</p>
-          <input type="email" placeholder="Email" className={styles.footerInput} />
+          <input type="email" placeholder="Email" className={styles.inputLine} />
         </div>
       </footer>
     </div>
